@@ -1,0 +1,38 @@
+:root{
+    --light-color1: #4b320c;
+    --light-color2: #552010;
+    --light-color3: #0e0806;
+}
+html{
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    font-weight: 900;
+    color: var(--light-color1);
+
+}
+.top{
+    display: grid;
+    grid-template-areas: 
+    "party party cta1"
+    "party party cta2";
+    gap: -20px;
+}
+body{
+    background: linear-gradient(to right, var(--light-color1),var(--light-color2),var(--light-color3) );
+
+}
+
+.party{
+    min-height: 450px;
+    background-image: url("../img/hallow.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.cta1{
+    grid-area: cta1;
+}
+.cta2{
+    grid-area: cta2;
+}
